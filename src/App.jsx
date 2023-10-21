@@ -1,14 +1,14 @@
-import {Container, Header, ImageHeader, Img, Separator,ConteinerHeader, Icons, ContainerIcons, BotaoLogin, HeaderTitle} from './styles'
+import { Main, ImageHeader, Img, Separator,ConteinerHeader, Icons, ContainerIcons, BotaoLogin, HeaderTitle, SeparadorBeneficios, Beneficio, Correto, Frases , Cards, Card, ImgCard} from 
+'./styles'
 import WatchFitLogo from './assets/img/Watchfit-logo.png'
 import Instagran from './assets/img/icon/instagram.png'
 import Google from './assets/img/icon/google.png'
+import Aceito from './assets/img/informations/aceitar.png'
 function App() {
 
   return (
     <>
-      
-      <Container>
-        <Header>
+        <Main>
           <ImageHeader>
             <Img src={WatchFitLogo} />
           </ImageHeader>
@@ -25,8 +25,30 @@ function App() {
           <HeaderTitle>
             A tecnologia que transforma uma academia
           </HeaderTitle>
-        </Header>
-      </Container>
+          <SeparadorBeneficios>
+            <Beneficio >
+              <Correto src={Aceito}/>
+              <Frases>Fácil usabilidade</Frases>
+            </Beneficio>
+            <Beneficio >
+              <Correto src={Aceito}/>
+              <Frases>Rápido acesso</Frases>
+            </Beneficio>
+            <Beneficio >
+              <Correto src={Aceito}/>
+              <Frases>inovador</Frases>
+            </Beneficio>
+            <Beneficio >
+              <Correto src={Aceito}/>
+              <Frases>Melhor suporte</Frases>
+            </Beneficio>
+          </SeparadorBeneficios>
+          <Cards>
+            <Card>
+              <ImgCard src={Aceito}/>
+            </Card>
+          </Cards>
+        </Main>
     </>
   )
 }
